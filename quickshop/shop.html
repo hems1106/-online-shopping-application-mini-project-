@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All Products | QuickShop</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="shop">
+<div id="site-header"></div>
+<main class="shop-wrap">
+  <aside class="side" id="side"></aside>
+  <section>
+    <div class="toolbar">
+      <div><h2 id="shop-title">All Products</h2><small id="shop-count"></small></div>
+      <select id="sort" onchange="renderShop()">
+        <option value="">Sort: Featured</option><option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option><option value="rate">Top Rated</option><option value="disc">Biggest Discount</option>
+      </select>
+    </div>
+    <div id="products" class="product-grid"></div>
+  </section>
+</main>
+<div id="site-footer"></div><div id="cart-root"></div>
+<script src="script.js"></script></body></html>
